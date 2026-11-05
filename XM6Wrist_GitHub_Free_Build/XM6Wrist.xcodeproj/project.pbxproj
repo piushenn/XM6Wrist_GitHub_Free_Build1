@@ -1,0 +1,87 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 60;
+    objects = {
+
+/* Begin PBXBuildFile section */
+        ABCD20260000000000000005 /* XM6WristApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD20260000000000000001 /* XM6WristApp.swift */; };
+        ABCD20260000000000000006 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD20260000000000000002 /* HomeView.swift */; };
+        ABCD20260000000000000007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCD20260000000000000003 /* Assets.xcassets */; };
+        ABCD20260000000000000016 /* BluetoothProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD20260000000000000018 /* BluetoothProbe.swift */; };
+        ABCD20260000000000000017 /* DiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD20260000000000000019 /* DiagnosticsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+        ABCD20260000000000000001 /* XM6WristApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XM6WristApp.swift; sourceTree = "<group>"; };
+        ABCD20260000000000000002 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+        ABCD20260000000000000003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        ABCD20260000000000000004 /* XM6Wrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XM6Wrist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        ABCD20260000000000000018 /* BluetoothProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothProbe.swift; sourceTree = "<group>"; };
+        ABCD20260000000000000019 /* DiagnosticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        ABCD2026000000000000000D /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+        ABCD20260000000000000008 = {isa = PBXGroup; children = (ABCD20260000000000000009 /* XM6Wrist */, ABCD2026000000000000000A /* Products */, ); sourceTree = "<group>"; };
+        ABCD20260000000000000009 /* XM6Wrist */ = {isa = PBXGroup; children = (ABCD20260000000000000001 /* XM6WristApp.swift */, ABCD20260000000000000002 /* HomeView.swift */, ABCD20260000000000000018 /* BluetoothProbe.swift */, ABCD20260000000000000019 /* DiagnosticsView.swift */, ABCD20260000000000000003 /* Assets.xcassets */, ); path = XM6Wrist; sourceTree = "<group>"; };
+        ABCD2026000000000000000A /* Products */ = {isa = PBXGroup; children = (ABCD20260000000000000004 /* XM6Wrist.app */, ); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+        ABCD2026000000000000000E /* XM6Wrist */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = ABCD20260000000000000015 /* Build configuration list for PBXNativeTarget "XM6Wrist" */;
+            buildPhases = (ABCD2026000000000000000B /* Sources */, ABCD2026000000000000000D /* Frameworks */, ABCD2026000000000000000C /* Resources */, );
+            buildRules = ();
+            dependencies = ();
+            name = XM6Wrist;
+            productName = XM6Wrist;
+            productReference = ABCD20260000000000000004 /* XM6Wrist.app */;
+            productType = "com.apple.product-type.application";
+        };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+        ABCD2026000000000000000F /* Project object */ = {
+            isa = PBXProject;
+            attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; TargetAttributes = {ABCD2026000000000000000E = {CreatedOnToolsVersion = 16.0; }; }; };
+            buildConfigurationList = ABCD20260000000000000014 /* Build configuration list for PBXProject "XM6Wrist" */;
+            compatibilityVersion = "Xcode 15.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (en, Base, );
+            mainGroup = ABCD20260000000000000008;
+            productRefGroup = ABCD2026000000000000000A /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (ABCD2026000000000000000E /* XM6Wrist */, );
+        };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+        ABCD2026000000000000000C /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (ABCD20260000000000000007 /* Assets.xcassets in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+        ABCD2026000000000000000B /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (ABCD20260000000000000005 /* XM6WristApp.swift in Sources */, ABCD20260000000000000006 /* HomeView.swift in Sources */, ABCD20260000000000000016 /* BluetoothProbe.swift in Sources */, ABCD20260000000000000017 /* DiagnosticsView.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+        ABCD20260000000000000010 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CODE_SIGN_STYLE = Automatic; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; GCC_OPTIMIZATION_LEVEL = 0; ONLY_ACTIVE_ARCH = YES; SDKROOT = watchos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+        ABCD20260000000000000011 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CODE_SIGN_STYLE = Automatic; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; SDKROOT = watchos; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; VALIDATE_PRODUCT = YES; }; name = Release; };
+        ABCD20260000000000000012 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "XM6 Wrist"; INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "XM6 Wrist scans nearby Bluetooth GATT devices to check whether Sony WF-1000XM6 settings are accessible from Apple Watch."; INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"; INFOPLIST_KEY_WKWatchOnly = YES; INFOPLIST_KEY_WKWatchKitApp = YES; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", ); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.XM6Wrist; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = watchos; SKIP_INSTALL = NO; SUPPORTED_PLATFORMS = "watchos watchsimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 11.0; }; name = Debug; };
+        ABCD20260000000000000013 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "XM6 Wrist"; INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "XM6 Wrist scans nearby Bluetooth GATT devices to check whether Sony WF-1000XM6 settings are accessible from Apple Watch."; INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"; INFOPLIST_KEY_WKWatchOnly = YES; INFOPLIST_KEY_WKWatchKitApp = YES; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", ); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.XM6Wrist; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = watchos; SKIP_INSTALL = NO; SUPPORTED_PLATFORMS = "watchos watchsimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 11.0; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        ABCD20260000000000000014 /* Build configuration list for PBXProject "XM6Wrist" */ = {isa = XCConfigurationList; buildConfigurations = (ABCD20260000000000000010 /* Debug */, ABCD20260000000000000011 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+        ABCD20260000000000000015 /* Build configuration list for PBXNativeTarget "XM6Wrist" */ = {isa = XCConfigurationList; buildConfigurations = (ABCD20260000000000000012 /* Debug */, ABCD20260000000000000013 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+    };
+    rootObject = ABCD2026000000000000000F /* Project object */;
+}

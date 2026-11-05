@@ -1,0 +1,64 @@
+name: XM6 Wrist - free watchOS build
+
+# GitHub's standard macOS runners are free for public repositories.
+# Builds for the Simulator without signing; DOES NOT install on a physical Watch.
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-watchos:
+    runs-on: macos-26
+    timeout-minutes: 25
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+
+      - name: Show Apple's toolchain
+        run: |
+          xcodebuild -version
+          xcrun --sdk watchsimulator --show-sdk-version
+          xcodebuild -list -project XM6Wrist.xcodeproj
+
+      - name: Compile independent watchOS app (unsigned Simulator build)
+        shell: bash
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project XM6Wrist.xcodeproj \
+            -scheme XM6Wrist \
+            -configuration Debug \
+            -sdk watchsimulator \
+            -destination 'generic/platform=watchOS Simulator' \
+            -derivedDataPath "$RUNNER_TEMP/XM6WristDerivedData" \
+            CODE_SIGNING_ALLOWED=NO \
+            build 2>&1 | tee "$RUNNER_TEMP/XM6Wrist-xcodebuild.log"
+
+      - name: Package Simulator build (not for a physical Watch)
+        if: success()
+        shell: bash
+        run: |
+          set -e
+          APP="$RUNNER_TEMP/XM6WristDerivedData/Build/Products/Debug-watchsimulator/XM6Wrist.app"
+          test -d "$APP"
+          ditto -c -k --sequesterRsrc --keepParent "$APP" "$RUNNER_TEMP/XM6Wrist-watchOS-Simulator.zip"
+
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: XM6Wrist-build-log
+          path: ${{ runner.temp }}/XM6Wrist-xcodebuild.log
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Upload Simulator-only app
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: XM6Wrist-watchOS-Simulator-only
+          path: ${{ runner.temp }}/XM6Wrist-watchOS-Simulator.zip
+          retention-days: 7
